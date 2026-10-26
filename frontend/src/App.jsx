@@ -20,7 +20,7 @@ import OrderHistory from "./OrderHistory";
 import AdminDashboard from "./AdminDashboard";
 
 const API_URL =
-  import.meta.env.VITE_API_URL ;
+  import.meta.env.VITE_API_URL || "https://mern-ecommerce-wjs0.onrender.com/api";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(
