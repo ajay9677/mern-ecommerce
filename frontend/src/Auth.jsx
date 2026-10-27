@@ -43,7 +43,7 @@ onSuccess();
     } catch (err) {
       setError(
         err.response?.data?.message ||
-          "Server connect aagala. Backend running-la irukka nu check pannu."
+          "Server not connected. check Backend its running."
       );
     } finally {
       setLoading(false);
