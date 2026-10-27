@@ -20,7 +20,7 @@ import OrderHistory from "./OrderHistory";
 import AdminDashboard from "./AdminDashboard";
 
 const API_URL =
-  import.meta.env.VITE_API_URL || "https://mern-ecommerce-wjs0.onrender.com/api";
+  import.meta.env.VITE_API_URL;
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(
@@ -47,7 +47,7 @@ const [user, setUser] = useState(() => {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await axios.get(`${API_URL}/api/products`);
+        const response = await axios.get(`${API_URL}/products`);
         setProducts(response.data.products);
       } catch {
         setError("Products not load. Backend server is it working?");
