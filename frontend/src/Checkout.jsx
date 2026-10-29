@@ -70,7 +70,7 @@ export default function Checkout({ cart, onBack, onOrderSuccess }) {
         key: paymentOrder.keyId,
         amount: paymentOrder.amount,
         currency: paymentOrder.currency,
-        name: "ShopEase",
+        name: "Shopora",
         description: "E-Commerce Order",
         order_id: paymentOrder.razorpayOrderId,
 
