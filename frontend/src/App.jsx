@@ -277,21 +277,13 @@ if (page === "admin") {
             <a href="#products" onClick={() => setMobileMenu(false)}>Products</a>
             <a href="#about" onClick={() => setMobileMenu(false)}>About</a>
 
-             {user && (
-      <>
-        <div className="border-t pt-3 text-sm font-semibold text-gray-700">
-          Hi, {user.name}
-        </div>
+           
 
         <a href="my orders" 
           onClick={() => {
             setPage("orders");
-            setMobileMenu(false);
-          }}
-          className="text-left text-sm font-medium hover:text-indigo-600"
-        >
-          My Orders
-        </a>
+            setMobileMenu(false)}}>my orders</a>
+        
 
         {user.role === "admin" && (
           <button
