@@ -216,9 +216,9 @@ if (page === "admin") {
 
           <div className="flex items-center gap-2">
 
-            {user && (
-  <>
-    <span className="hidden text-sm font-medium text-gray-700 sm:inline">
+           {user && (
+  <div className="hidden items-center gap-2 md:flex">
+    <span className="text-sm font-medium text-gray-700">
       Hi, {user.name}
     </span>
 
@@ -228,26 +228,27 @@ if (page === "admin") {
     >
       Logout
     </button>
-  
 
-  <button
-  onClick={() => setPage("orders")}
-  className="rounded-xl border border-gray-200 px-3 py-2 text-sm font-semibold hover:bg-gray-100"
->
-  My Orders
-</button>
+    <button
+      onClick={() => setPage("orders")}
+      className="rounded-xl border border-gray-200 px-3 py-2 text-sm font-semibold hover:bg-gray-100"
+    >
+      My Orders
+    </button>
 
-{user?.role === "admin" && (
-  <button
-    onClick={() => setPage("admin")}
-    className="rounded-lg bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
-  >
-    Admin Dashboard
-  </button>
+    {user.role === "admin" && (
+      <button
+        onClick={() => setPage("admin")}
+        className="rounded-lg bg-indigo-600 px-4 py-2 text-white hover:bg-indigo-700"
+      >
+        Admin Dashboard
+      </button>
+    )}
+  </div>
 )}
 
-</>
-)}
+
+
             <button
               onClick={() => setCartOpen(true)}
               className="relative rounded-xl border border-gray-200 p-3 hover:bg-gray-100"
@@ -277,12 +278,21 @@ if (page === "admin") {
             <a href="#products" onClick={() => setMobileMenu(false)}>Products</a>
             <a href="#about" onClick={() => setMobileMenu(false)}>About</a>
 
-           
+             {user && (
+      <>
+        <div className="border-t pt-3 text-sm font-semibold text-gray-700">
+          Hi, {user.name}
+        </div>
 
-        <a href="my orders" 
-          onClick={() => {
-            setPage("orders");
-            setMobileMenu(false)}}>my orders</a>
+       <button
+  onClick={() => {
+    setPage("orders");
+    setMobileMenu(false);
+  }}
+  className="text-left text-sm font-medium hover:text-indigo-600"
+>
+  My Orders
+</button>
         
 
         {user.role === "admin" && (
