@@ -18,6 +18,7 @@ import Auth from "./Auth";
 import Checkout from "./Checkout";
 import OrderHistory from "./OrderHistory";
 import AdminDashboard from "./AdminDashboard";
+import Contact from "./Contact";
 
 const API_URL =
   import.meta.env.VITE_API_URL;
@@ -147,6 +148,10 @@ const handleLogout = () => {
   setCartOpen(false);
 };
 
+if (page === "contact") {
+  return <Contact onBack={() => setPage("shop")} />;
+}
+
 if (page === "checkout") {
   return (
     <Checkout
@@ -209,6 +214,14 @@ if (page === "admin") {
             <a href="#products" className="text-sm font-medium hover:text-indigo-600">
               Products
             </a>
+
+            <a
+  href="#contact"
+  onClick={() => setPage("contact")}
+  className="text-sm font-medium hover:text-indigo-600"
+>
+  Contact
+</a>
             <a href="#about" className="text-sm font-medium hover:text-indigo-600">
               About
             </a>
@@ -276,6 +289,7 @@ if (page === "admin") {
           <nav className="flex flex-col gap-4 border-t px-6 py-4 md:hidden">
             <a href="#home" onClick={() => setMobileMenu(false)}>Home</a>
             <a href="#products" onClick={() => setMobileMenu(false)}>Products</a>
+            <a href="#contact" onClick={() => {setPage("contact");setMobileMenu(false); }}>Contact</a>
             <a href="#about" onClick={() => setMobileMenu(false)}>About</a>
 
              {user && (
