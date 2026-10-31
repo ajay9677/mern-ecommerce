@@ -283,7 +283,7 @@ if (page === "admin") {
           Hi, {user.name}
         </div>
 
-        <button
+        <a href="my orders" 
           onClick={() => {
             setPage("orders");
             setMobileMenu(false);
@@ -291,7 +291,7 @@ if (page === "admin") {
           className="text-left text-sm font-medium hover:text-indigo-600"
         >
           My Orders
-        </button>
+        </a>
 
         {user.role === "admin" && (
           <button
