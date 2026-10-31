@@ -409,9 +409,34 @@ if (page === "admin") {
           <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-12 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
             <div>
               <h2 className="text-xl font-bold">Shopping made simple</h2>
-              <p className="mt-2 text-sm text-gray-500">
-                A full-stack e-commerce project built with the MERN stack.
-              </p>
+              
+               
+
+<p>Welcome to **Shopora**, your one-stop destination for a seamless and enjoyable online shopping experience.</p><br></br>
+
+<p>At Shopora, we believe shopping should be simple, convenient, and accessible to everyone. Our goal is to bring you a wide range of quality products at affordable prices, all in one place.</p><br></br>
+
+<p>From everyday essentials to the latest trending products, we make it easy to discover and shop for what you love. With a user-friendly shopping experience, secure checkout, and reliable service, we aim to make every purchase smooth and satisfying.</p><br></br>
+
+ <h1 className="text-xl font-bold">Our Mission</h1><br></br>
+<p>To make online shopping easier and more affordable by providing quality products, competitive prices, and a reliable shopping experience.</p><br></br>
+
+ <h1 className="text-xl font-bold">Our Vision</h1><br></br>
+<p>To become a trusted online shopping destination where customers can find everything they need with confidence.</p><br></br>
+
+ <h2 className="text-xl font-bold">Why Choose Shopora?</h2><br></br>
+<ul>
+  <li><strong>Quality Products:</strong> Carefully selected products for everyday needs.</li>
+  <li><strong>Affordable Prices:</strong> Great value without compromising quality.</li>
+  <li><strong>Secure Shopping:</strong> Safe and secure online transactions.</li>
+  <li><strong>Easy Experience:</strong> Simple navigation and hassle-free ordering.</li>
+  <li><strong>Customer Satisfaction:</strong> Your shopping experience is our priority.</li>
+</ul>
+
+<br></br>
+ <p>Shop Smart. Shop Easy. Shopora.</p><br></br>
+<p>Thank you for choosing Shopora. We're happy to be a part of your shopping journey!.</p>
+              
             </div>
             <div className="flex items-center gap-2 text-sm font-medium text-gray-600">
               <PackageCheck size={20} className="text-indigo-600" />
@@ -525,7 +550,7 @@ if (page === "admin") {
       )}
 
       <footer className="bg-gray-950 px-4 py-6 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} ShopEase. All rights reserved.
+        © {new Date().getFullYear()} Shopora. All rights reserved.
       </footer>
     </div>
   );
