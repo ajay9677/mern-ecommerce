@@ -451,7 +451,7 @@ if (page === "admin") {
         <section id="about" className="border-t border-gray-200 bg-white">
           <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-12 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
             <div>
-              <h2 className="text-xl font-bold">Shopping made simple</h2>
+              <h1 className="text-3xl font-bold">Shopping made simple</h1><br></br>
               
                
 
@@ -477,7 +477,7 @@ if (page === "admin") {
 </ul>
 
 <br></br>
- <p>Shop Smart. Shop Easy. Shopora.</p><br></br>
+ <p className="text-xl font-bold">Shop Smart. Shop Easy. Shopora.</p><br></br>
 <p>Thank you for choosing Shopora. We're happy to be a part of your shopping journey!.</p>
               
             </div>
