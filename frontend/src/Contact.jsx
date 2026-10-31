@@ -76,7 +76,7 @@ function Contact({ onBack }) {
               <Mail className="mb-3 text-indigo-600" />
               <h3 className="font-bold">Email Us</h3>
               <p className="mt-1 text-sm text-gray-600">
-                Contact our support team
+                ajay7667826711@gmail.com
               </p>
             </div>
 
@@ -84,7 +84,7 @@ function Contact({ onBack }) {
               <Phone className="mb-3 text-indigo-600" />
               <h3 className="font-bold">Customer Support</h3>
               <p className="mt-1 text-sm text-gray-600">
-                We're here to help
+                +91 9677552136
               </p>
             </div>
 
