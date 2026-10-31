@@ -276,6 +276,47 @@ if (page === "admin") {
             <a href="#home" onClick={() => setMobileMenu(false)}>Home</a>
             <a href="#products" onClick={() => setMobileMenu(false)}>Products</a>
             <a href="#about" onClick={() => setMobileMenu(false)}>About</a>
+
+             {user && (
+      <>
+        <div className="border-t pt-3 text-sm font-semibold text-gray-700">
+          Hi, {user.name}
+        </div>
+
+        <button
+          onClick={() => {
+            setPage("orders");
+            setMobileMenu(false);
+          }}
+          className="text-left text-sm font-medium hover:text-indigo-600"
+        >
+          My Orders
+        </button>
+
+        {user.role === "admin" && (
+          <button
+            onClick={() => {
+              setPage("admin");
+              setMobileMenu(false);
+            }}
+            className="text-left text-sm font-medium text-indigo-600"
+          >
+            Admin Dashboard
+          </button>
+        )}
+
+        <button
+          onClick={() => {
+            setMobileMenu(false);
+            handleLogout();
+          }}
+          className="rounded-xl border border-red-200 px-4 py-2 text-left text-sm font-semibold text-red-600 hover:bg-red-50"
+        >
+          Logout
+        </button>
+      </>
+             )}
+
           </nav>
         )}
       </header>
